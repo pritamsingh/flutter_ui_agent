@@ -1,0 +1,109 @@
+{
+  "type": "Scaffold",
+  "properties": {
+    "backgroundColor": "white",
+    "appBar": {
+      "type": "AppBar",
+      "properties": {
+        "backgroundColor": "blue",
+        "title": {
+          "type": "Text",
+          "properties": {
+            "text": "Configuration Input",
+            "color": "white",
+            "fontSize": 20,
+            "fontWeight": "bold"
+          }
+        }
+      }
+    },
+    "body": {
+      "type": "SingleChildScrollView",
+      "children": [
+        {
+          "type": "Padding",
+          "properties": {
+            "padding": {
+              "all": 16
+            }
+          },
+          "children": [
+            {
+              "type": "Column",
+              "properties": {
+                "mainAxisAlignment": "start",
+                "crossAxisAlignment": "stretch"
+              },
+              "children": [
+                {
+                  "type": "TextField",
+                  "properties": {
+                    "label": "Interval",
+                    "hint": "e.g., 1h, 4h, 1d"
+                  }
+                },
+                {
+                  "type": "SizedBox",
+                  "properties": {
+                    "height": 16
+                  }
+                },
+                {
+                  "type": "TextField",
+                  "properties": {
+                    "label": "Period",
+                    "hint": "e.g., 50, 200 (integer)"
+                  }
+                },
+                {
+                  "type": "SizedBox",
+                  "properties": {
+                    "height": 16
+                  }
+                },
+                {
+                  "type": "TextField",
+                  "properties": {
+                    "label": "Parameter",
+                    "hint": "e.g., close, open, high, low (string)"
+                  }
+                },
+                {
+                  "type": "SizedBox",
+                  "properties": {
+                    "height": 16
+                  }
+                },
+                {
+                  "type": "TextField",
+                  "properties": {
+                    "label": "Number of Indicators",
+                    "hint": "e.g., 3, 5 (integer)"
+                  }
+                },
+                {
+                  "type": "SizedBox",
+                  "properties": {
+                    "height": 24
+                  }
+                },
+                {
+                  "type": "ElevatedButton",
+                  "properties": {
+                    "text": "Save Configuration",
+                    "backgroundColor": "blue",
+                    "textColor": "white",
+                    "padding": {
+                      "vertical": 12
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "children": []
+}

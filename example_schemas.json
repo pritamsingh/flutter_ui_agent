@@ -1,0 +1,27 @@
+{
+  "login_screen": {
+    "type": "Container",
+    "properties": {
+      "padding": 20,
+      "color": "white"
+    },
+    "children": [
+      {
+        "type": "Column",
+        "properties": {
+          "mainAxisAlignment": "center"
+        },
+        "children": [
+          {
+            "type": "Text",
+            "properties": {
+              "text": "Welcome Back",
+              "fontSize": 32
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

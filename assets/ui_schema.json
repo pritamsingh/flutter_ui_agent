@@ -1,0 +1,309 @@
+{
+  "type": "Scaffold",
+  "properties": {
+    "appBar": {
+      "type": "AppBar",
+      "properties": {
+        "title": {
+          "type": "Text",
+          "properties": {
+            "text": "Multi-Step Form",
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "color": "white"
+          }
+        },
+        "backgroundColor": "blue"
+      }
+    },
+    "body": {
+      "type": "Column",
+      "properties": {
+        "mainAxisAlignment": "spaceBetween",
+        "crossAxisAlignment": "stretch"
+      },
+      "children": [
+        {
+          "type": "Padding",
+          "properties": {
+            "padding": {
+              "all": 16
+            }
+          },
+          "children": [
+            {
+              "type": "Column",
+              "children": [
+                {
+                  "type": "Text",
+                  "properties": {
+                    "text": "Step 1 of 3",
+                    "fontSize": 18,
+                    "fontWeight": "bold",
+                    "textAlign": "center",
+                    "color": "black"
+                  }
+                },
+                {
+                  "type": "SizedBox",
+                  "properties": {
+                    "height": 24
+                  }
+                },
+                {
+                  "type": "Row",
+                  "properties": {
+                    "mainAxisAlignment": "spaceAround",
+                    "crossAxisAlignment": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "Column",
+                      "properties": {
+                        "crossAxisAlignment": "center"
+                      },
+                      "children": [
+                        {
+                          "type": "Icon",
+                          "properties": {
+                            "icon": "check_circle",
+                            "size": 30,
+                            "color": "blue"
+                          }
+                        },
+                        {
+                          "type": "SizedBox",
+                          "properties": {
+                            "height": 4
+                          }
+                        },
+                        {
+                          "type": "Text",
+                          "properties": {
+                            "text": "Details",
+                            "fontSize": 14,
+                            "color": "blue"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Container",
+                      "properties": {
+                        "width": 50,
+                        "height": 2,
+                        "color": "lightGrey"
+                      }
+                    },
+                    {
+                      "type": "Column",
+                      "properties": {
+                        "crossAxisAlignment": "center"
+                      },
+                      "children": [
+                        {
+                          "type": "Icon",
+                          "properties": {
+                            "icon": "radio_button_unchecked",
+                            "size": 30,
+                            "color": "grey"
+                          }
+                        },
+                        {
+                          "type": "SizedBox",
+                          "properties": {
+                            "height": 4
+                          }
+                        },
+                        {
+                          "type": "Text",
+                          "properties": {
+                            "text": "Address",
+                            "fontSize": 14,
+                            "color": "grey"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Container",
+                      "properties": {
+                        "width": 50,
+                        "height": 2,
+                        "color": "lightGrey"
+                      }
+                    },
+                    {
+                      "type": "Column",
+                      "properties": {
+                        "crossAxisAlignment": "center"
+                      },
+                      "children": [
+                        {
+                          "type": "Icon",
+                          "properties": {
+                            "icon": "radio_button_unchecked",
+                            "size": 30,
+                            "color": "grey"
+                          }
+                        },
+                        {
+                          "type": "SizedBox",
+                          "properties": {
+                            "height": 4
+                          }
+                        },
+                        {
+                          "type": "Text",
+                          "properties": {
+                            "text": "Confirm",
+                            "fontSize": 14,
+                            "color": "grey"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Expanded",
+          "children": [
+            {
+              "type": "SingleChildScrollView",
+              "children": [
+                {
+                  "type": "Padding",
+                  "properties": {
+                    "padding": {
+                      "horizontal": 16,
+                      "vertical": 8
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Column",
+                      "properties": {
+                        "mainAxisAlignment": "start",
+                        "crossAxisAlignment": "stretch"
+                      },
+                      "children": [
+                        {
+                          "type": "Text",
+                          "properties": {
+                            "text": "Personal Information",
+                            "fontSize": 20,
+                            "fontWeight": "bold",
+                            "color": "black"
+                          }
+                        },
+                        {
+                          "type": "SizedBox",
+                          "properties": {
+                            "height": 24
+                          }
+                        },
+                        {
+                          "type": "TextField",
+                          "properties": {
+                            "hint": "Enter your first name",
+                            "label": "First Name"
+                          }
+                        },
+                        {
+                          "type": "SizedBox",
+                          "properties": {
+                            "height": 16
+                          }
+                        },
+                        {
+                          "type": "TextField",
+                          "properties": {
+                            "hint": "Enter your last name",
+                            "label": "Last Name"
+                          }
+                        },
+                        {
+                          "type": "SizedBox",
+                          "properties": {
+                            "height": 16
+                          }
+                        },
+                        {
+                          "type": "TextField",
+                          "properties": {
+                            "hint": "Enter your email address",
+                            "label": "Email"
+                          }
+                        },
+                        {
+                          "type": "SizedBox",
+                          "properties": {
+                            "height": 16
+                          }
+                        },
+                        {
+                          "type": "TextField",
+                          "properties": {
+                            "hint": "Enter your phone number",
+                            "label": "Phone"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Padding",
+          "properties": {
+            "padding": {
+              "all": 16
+            }
+          },
+          "children": [
+            {
+              "type": "Row",
+              "properties": {
+                "mainAxisAlignment": "spaceBetween"
+              },
+              "children": [
+                {
+                  "type": "ElevatedButton",
+                  "properties": {
+                    "text": "Back",
+                    "backgroundColor": "grey",
+                    "textColor": "white",
+                    "padding": {
+                      "horizontal": 24,
+                      "vertical": 12
+                    }
+                  }
+                },
+                {
+                  "type": "ElevatedButton",
+                  "properties": {
+                    "text": "Next",
+                    "backgroundColor": "blue",
+                    "textColor": "white",
+                    "padding": {
+                      "horizontal": 24,
+                      "vertical": 12
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "children": []
+}

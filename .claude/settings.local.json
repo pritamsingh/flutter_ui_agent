@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter build apk --debug)",
+      "Bash(python3 -c \"import ast; ast.parse\\(open\\(''flutter_ui_agent.py''\\).read\\(\\)\\); print\\(''Syntax OK''\\)\")",
+      "Bash(python3 -c \"from flutter_ui_agent import FlutterUIAgent; print\\(''Import OK''\\)\")",
+      "Bash(pip install langchain-google-genai)",
+      "Bash(pip3 install langchain-google-genai)",
+      "Read(//opt/homebrew/Cellar/python@3.13/3.13.12_1/Frameworks/Python.framework/Versions/3.13/bin/**)",
+      "Bash(/Users/pritam/Downloads/flutter_ui_agent/venv/bin/pip install langchain-google-genai langchain-core)",
+      "Bash(/Users/pritam/Downloads/flutter_ui_agent/venv/bin/python -c \"from langchain_google_genai import ChatGoogleGenerativeAI; from langchain_core.messages import HumanMessage; print\\(''OK''\\)\")",
+      "Bash(/Users/pritam/Downloads/flutter_ui_agent/.venv/bin/pip install langchain)",
+      "Bash(.venv/bin/python -c \"from langchain.prompts import PromptTemplate; print\\(''OK''\\)\")"
+    ]
+  }
+}
