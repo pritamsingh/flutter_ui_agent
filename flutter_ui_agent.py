@@ -42,14 +42,12 @@ WidgetSchema.model_rebuild()
 class FlutterUIAgent:
     """Agent that generates Flutter UI from text descriptions"""
     
-    AVAILABLE_MODELS = [
-        "Gemini 3 Pro",
-        "gemini-2.0-flash",
-        "Gemini 2.5 Pro",
-        "Gemini 2 Flash Exp",
-        "gemini-2.5-flash",
-        "Gemini 2.5 Flash Lite",
-        "Gemini 2.5 Flash TTS",
+      AVAILABLE_MODELS = [
+        "gemini-2.0-flash",       # Fast, highest free-tier limits (1500 req/day)
+        "gemini-2.5-flash",       # Latest flash, smarter but 20 req/day free
+        "gemini-2.5-pro",         # Best quality, complex UIs, 5 req/day free
+        "gemini-1.5-flash",       # Lightweight, good for simple screens
+        "gemini-1.5-pro",         # Previous gen pro, solid quality
     ]
 
     def __init__(self, api_key: str, model: str = "gemini-2.0-flash"):
