@@ -41,8 +41,7 @@ WidgetSchema.model_rebuild()
 
 class FlutterUIAgent:
     """Agent that generates Flutter UI from text descriptions"""
-    
-      AVAILABLE_MODELS = [
+    AVAILABLE_MODELS = [
         "gemini-2.0-flash",       # Fast, highest free-tier limits (1500 req/day)
         "gemini-2.5-flash",       # Latest flash, smarter but 20 req/day free
         "gemini-2.5-pro",         # Best quality, complex UIs, 5 req/day free
